@@ -24,10 +24,10 @@
     const sound = document.getElementById('player');
 
     sound.addEventListener('play', (event) => {
-      document.getElementById("unmuteButton").hidden = true;
+      document.getElementById("unmuteButton").hidden = false;
     });
     sound.addEventListener('pause', (event) => {
-      document.getElementById("unmuteButton").hidden = false;
+      document.getElementById("unmuteButton").hidden = true;
     });
 
     function playSound() {
