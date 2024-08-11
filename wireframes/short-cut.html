@@ -2,22 +2,23 @@
 <meta charset="UTF-8">
 <head>
   <title>Ah Ah Ah, you didn't say the magic word!</title>
+  <link rel="stylesheet" href="/css/style1.css">
 </head>
 <html>
   <body>
     <div class="container" onclick="playSound()">
       <div class="nedry">
-        <img class="nedry-body" src="resources/body.png">
-        <img class="nedry-head" src="resources/head.png">
-        <img class="nedry-hand" src="resources/hand.png">
+        <img class="nedry-body" src="/resources/body.png">
+        <img class="nedry-head" src="/resources/head.png">
+        <img class="nedry-hand" src="/resources/hand.png">
       </div>
       <audio id="player" autoplay loop>
-        <source src="resources/ahahah.mp3" type="audio/mp3">
+        <source src="/resources/ahahah.mp3" type="audio/mp3">
       </audio>
       <input id="unmuteButton" type="button" onclick="playSound()" value="🔈 Unmute" />
     </div>
   </body>
-  <link rel="stylesheet" href="resources/style1.css">
+  
 
   <script>
     const sound = document.getElementById('player');
